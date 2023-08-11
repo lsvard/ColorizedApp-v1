@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func sliderAction() {
-        redLabel.text = String(format: "Red: %.2f", redSlider.value)
-        greenLabel.text = String(format: "Green: %.2F", greenSlider.value)
-        blueLabel.text = String(format: "Blue: %.2F", blueSlider.value)
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2F", greenSlider.value)
+        blueLabel.text = String(format: "%.2F", blueSlider.value)
         changeViewColor()
     }
     
