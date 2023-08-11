@@ -58,13 +58,13 @@
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QxK-Pi-x1a">
                                                         <rect key="frame" x="-2" y="0.0" width="254" height="35.5"/>
                                                         <connections>
-                                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="mMY-xk-Jej"/>
+                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="AMW-kF-SCJ"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MHh-1z-EhK">
                                                         <rect key="frame" x="-2" y="44.5" width="254" height="31"/>
                                                         <connections>
-                                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="bQA-80-yuT"/>
+                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="S9a-t7-hdK"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4hC-7d-knZ">
@@ -73,7 +73,7 @@
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Xiy-VB-8Kj"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="otc-mN-ow8"/>
+                                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Qco-N6-0Ab"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -97,8 +97,8 @@
                         <outlet property="greenLabel" destination="BKg-uh-ECb" id="sWC-cJ-Dy1"/>
                         <outlet property="greenSlider" destination="MHh-1z-EhK" id="FOO-hu-Y2Y"/>
                         <outlet property="mainView" destination="T6s-wv-SXr" id="mKe-HO-fmS"/>
-                        <outlet property="redLabel" destination="aaG-aa-ZKr" id="pH1-r1-ffP"/>
-                        <outlet property="redSlider" destination="QxK-Pi-x1a" id="4Da-HG-RZP"/>
+                        <outlet property="redLabel" destination="aaG-aa-ZKr" id="ak9-qx-GIc"/>
+                        <outlet property="redSlider" destination="QxK-Pi-x1a" id="7k4-hG-nGn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
