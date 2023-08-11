@@ -8,12 +8,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: IBOutlets
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.layer.cornerRadius = 15
+        setupSlider()
+        redSliderAction()
+        greenSliderAction()
+        blueSliderAction()
         
     }
-
-
+    
+    // MARK: - IBActions
+    @IBAction func redSliderAction() {
+        //redLabel.text = String(redSlider.value)
+        redLabel.text = "Red: \(redSlider.value.formatted())"
+    }
+    
+    @IBAction func greenSliderAction() {
+        
+    }
+    
+    @IBAction func blueSliderAction() {
+        
+    }
+    
+    // MARK: - Private Methods
+    private func setupSlider() {
+        redSlider.minimumTrackTintColor = .red
+        greenSlider.minimumTrackTintColor = .green
+        blueSlider.minimumTrackTintColor = .blue
+    }
 }
 
